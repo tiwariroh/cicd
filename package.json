@@ -1,13 +1,15 @@
 {
-  "dependencies": {
-    "concurrently": "^8.2.2"
-  },
+  "name": "your-node-app",
+  "version": "1.0.0",
   "scripts": {
-    "start-frontend": "cd frontend && npm run dev",
-    "start-backend": "cd backend && npm start",
-    "start": "concurrently -n \"FRONTEND,BACKEND\" -c \"bgBlue,bgYellow\" -p \"[{name}]\" \"npm run start-frontend\" \"npm run start-backend\"",
-    "install-frontend": "cd frontend && npm i",
-    "install-backend": "cd backend && npm i",
-    "installer": "npm i && npm run install-backend && npm run install-frontend"
+    "start": "node server.js",  // Example start script
+    "test": "mocha tests/*.js", // Example test script
+    "build": "webpack --config webpack.config.js"  // Example build script
+  },
+  "dependencies": {
+    // Your dependencies
+  },
+  "devDependencies": {
+    // Your dev dependencies
   }
 }
