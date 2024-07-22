@@ -4,7 +4,7 @@ services:
   webapp:
     image: nginx:latest
     ports:
-      - "8040:80"
+      - "8090:80"
     volumes:
       - ./app:/usr/share/nginx/html
     networks:
